@@ -269,7 +269,7 @@ limit_bottom = 800
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, 56)
-scale = Vector2(0.943725, 1.04944)
+scale = Vector2(0.892193, 1.10341)
 tile_set = SubResource("TileSet_plrh8")
 format = 2
 layer_0/name = "1"
