@@ -2,7 +2,7 @@ extends Node2D
 
 var state = "no apples"
 var player_in_area = false
-
+var apple = preload("res://scenes/apple_collectable.tscn")
 
 func _ready():
 	if state == "no apples":
@@ -10,7 +10,7 @@ func _ready():
 		
 func _process(delta):
 	if state == "no apples":
-		$AnimatedSprite2D.play("no apples")
+		$AnimatedSprite2D.play("no_apples")
 	if state == "apples":
 		$AnimatedSprite2D.play("apples")
 		if player_in_area:
@@ -18,3 +18,18 @@ func _process(delta):
 				state = "no apples"
 				$growth_timer.start()
 
+
+
+func _on_pickable_area_body_entered(body):
+	if body.has_method("player"):
+		player_in_area = true
+
+
+func _on_pickable_area_body_exited(body):
+	if body.has_method("player"):
+		player_in_area = false
+
+
+func _on_growth_timer_timeout():
+	if state == "no apples":
+		state = "apples"

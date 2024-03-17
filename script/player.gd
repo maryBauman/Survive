@@ -36,3 +36,6 @@ func play_anim(dir):
 			$AnimatedSprite2D.play("nw-walk")
 		if dir.x < 0.5 and dir.y > 0.5:
 			$AnimatedSprite2D.play("sw-walk")
+
+func player():
+	pass
