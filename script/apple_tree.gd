@@ -16,7 +16,7 @@ func _process(delta):
 		if player_in_area:
 			if Input.is_action_just_pressed("e"):
 				state = "no apples"
-				$growth_timer.start()
+				_drop_apple()
 
 
 
@@ -33,3 +33,11 @@ func _on_pickable_area_body_exited(body):
 func _on_growth_timer_timeout():
 	if state == "no apples":
 		state = "apples"
+
+func _drop_apple():
+	var apple_instance = apple.instantiate()
+	apple_instance.global_position = $Marker2D.global_position
+	get_parent().add_child(apple_instance)
+	
+	await get_tree().create_timer(3).timeout
+	$growth_timer.start()
