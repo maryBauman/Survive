@@ -2,7 +2,7 @@ extends Node2D
 
 var state = "no apples"
 var player_in_area = false
-var apple = preload("res://scenes/apple_collectable.tscn")
+var apple = preload("res://scenes/plants/apple_collectable.tscn")
 
 func _ready():
 	if state == "no apples":
