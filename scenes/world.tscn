@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cy5a7c2wpcxkn"]
+[gd_scene load_steps=13 format=3 uid="uid://cy5a7c2wpcxkn"]
 
 [ext_resource type="PackedScene" uid="uid://caoddlud4u0ul" path="res://scenes/player.tscn" id="1_uui8f"]
 [ext_resource type="Texture2D" uid="uid://nbbmuomuymlb" path="res://art/environment/survivalgame-terrian-defult.png" id="2_g05bu"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://8f2l3tb1xeue" path="res://art/environment/survivalgame-trees.png" id="4_hvo8r"]
 [ext_resource type="Texture2D" uid="uid://bc0my6wxjvebl" path="res://art/environment/survivalgame-terrian-water.png" id="5_4fbwq"]
 [ext_resource type="PackedScene" uid="uid://51c3jrrwueam" path="res://apple_tree.tscn" id="6_vll8s"]
+[ext_resource type="AudioStream" uid="uid://c5yc7fuvp324d" path="res://music/sax.wav" id="7_71800"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0thck"]
 texture = ExtResource("2_g05bu")
@@ -292,7 +293,22 @@ layer_2/z_index = 0
 layer_2/tile_data = PackedInt32Array(196609, 524290, 0, 524285, 524290, 0, -196609, 524290, 0, 262140, 524290, 1, 458750, 524290, 1, 131073, 524290, 1, -65532, 524290, 1, -262133, 524290, 1, 65548, 524290, 2, 196614, 524290, 2, 196608, 524290, 2, -131068, 524290, 2, -327679, 524290, 2, 131068, 524290, 2, -262144, 524290, 2, 393221, 1114114, 1, 131067, 1114114, 1, 393211, 1114114, 0, 524289, 1114114, 0, -393223, 196610, 1, -327687, 196610, 1, -262151, 196610, 1, -196615, 196610, 2, -65543, 524290, 0, -393222, 262146, 0, -327686, 262146, 1, -262150, 65538, 1, -196614, 262146, 2, 65530, 524290, 0, -393221, 262146, 0, -327685, 65538, 1, -262149, 65538, 1, -196613, 262146, 2, -131077, 524290, 2, -65541, 524290, 0, -393220, 327682, 0, -327684, 327682, 1, -262148, 327682, 1, -196612, 327682, 2, -65540, 524290, 2, -262147, 524290, 2, 65533, 1114114, 2, -327682, 524290, 0, -262146, 524290, 1)
 
 [node name="apple_tree" parent="." instance=ExtResource("6_vll8s")]
-position = Vector2(24, -24)
+position = Vector2(239, 687)
 
 [node name="apple_tree2" parent="." instance=ExtResource("6_vll8s")]
-position = Vector2(99, 33)
+position = Vector2(206, 202)
+
+[node name="apple_tree3" parent="." instance=ExtResource("6_vll8s")]
+position = Vector2(-91, -81)
+
+[node name="apple_tree4" parent="." instance=ExtResource("6_vll8s")]
+position = Vector2(334, 340)
+scale = Vector2(1, 0.995551)
+
+[node name="apple_tree5" parent="." instance=ExtResource("6_vll8s")]
+position = Vector2(883, 69.6218)
+scale = Vector2(1, 0.991121)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_71800")
+autoplay = true
