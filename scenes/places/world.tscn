@@ -313,3 +313,5 @@ scale = Vector2(1, 0.991121)
 stream = ExtResource("7_nv6n8")
 volume_db = -64.0
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
