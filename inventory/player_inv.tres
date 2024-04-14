@@ -5,4 +5,4 @@
 
 [resource]
 script = ExtResource("2_s4t8g")
-items = Array[Resource("res://inventory/inventory_item.gd")]([null, null, null, ExtResource("1_gqulm"), ExtResource("1_gqulm"), null, null, null, null, null, null, null])
+items = Array[Resource("res://inventory/inventory_item.gd")]([ExtResource("1_gqulm"), null, null, ExtResource("1_gqulm"), ExtResource("1_gqulm"), null, null, null, null, null, null, null])

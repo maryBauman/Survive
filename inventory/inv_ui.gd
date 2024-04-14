@@ -1,16 +1,16 @@
 extends Control
-var is_open = false
 @onready var inventory: Inventory = preload("res://inventory/player_inv.tres")
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
 
-
+var is_open = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	update_inv_slots()
 	close()
 	
 func update_inv_slots():
-	for i in range(min(inventory.item.size(), slots.size())):
-		slots[i].update(inv.item[i])
+	for i in range(min(inventory.items.size(), slots.size())):
+		slots[i].update(inventory.items[i])
 
 func close():
 	visible = false

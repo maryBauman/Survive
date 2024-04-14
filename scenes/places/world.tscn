@@ -311,7 +311,7 @@ scale = Vector2(1, 0.991121)
 
 [node name="backgroundMusicSax" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_nv6n8")
-volume_db = -64.0
+volume_db = -40.889
 autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
