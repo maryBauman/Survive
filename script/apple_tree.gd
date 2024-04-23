@@ -4,6 +4,9 @@ var state = "no apples"
 var player_in_area = false
 var apple = preload("res://scenes/plants/apple_collectable.tscn")
 
+@export var item: Inventory_item
+var player = null
+
 func _ready():
 	if state == "no apples":
 		$growth_timer.wait_time = randi_range(10, 30)
@@ -24,6 +27,7 @@ func _process(delta):
 func _on_pickable_area_body_entered(body):
 	if body.has_method("player"):
 		player_in_area = true
+		player = body
 
 
 func _on_pickable_area_body_exited(body):
@@ -39,4 +43,5 @@ func _drop_apple():
 	var apple_instance = apple.instantiate()
 	apple_instance.global_position = $Marker2D.global_position
 	get_parent().add_child(apple_instance)
+	player.collect(item)
 	$growth_timer.start()
