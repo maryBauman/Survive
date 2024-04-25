@@ -10,6 +10,8 @@ func update(slot: InvSlot):
 	else:
 		item_visual.visible = true
 		item_visual.texture = slot.item.texture
-		amount_text.visible = true
+		#this if statement is literally just to remove the number from a single item
+		if slot.amount > 1:
+			amount_text.visible = true
 		amount_text.text = str(slot.amount)
 		
