@@ -5,12 +5,13 @@ extends Control
 var is_open = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	inventory.update.connect(update_inv_slots)
 	update_inv_slots()
 	close()
 	
 func update_inv_slots():
-	for i in range(min(inventory.items.size(), slots.size())):
-		slots[i].update(inventory.items[i])
+	for i in range(min(inventory.slots.size(), slots.size())):
+		slots[i].update(inventory.slots[i])
 
 func close():
 	visible = false
