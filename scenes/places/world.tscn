@@ -326,7 +326,12 @@ position = Vector2(183, 174)
 [node name="stick_collectable3" parent="." instance=ExtResource("8_p5kkq")]
 position = Vector2(164, 268)
 
-[node name="collisions" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
-polygon = PackedVector2Array(-165, -152, 28, -156, 441, -154, 481, -116, 582, -98, 565, 57, 560, 171, 521, 367, 508, 461, 487, 546, 491, 747, 488, 835, 321, 844, 30, 842, -202, 824, -200, 633, -166, 434, -164, 243, -166, -2)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+scale = Vector2(0.992447, 1)
+
+[node name="smallLakeCollisions" type="StaticBody2D" parent="."]
+
+[node name="smallLakeCollisionShape" type="CollisionPolygon2D" parent="smallLakeCollisions"]
+polygon = PackedVector2Array(507, 163, 507, 304, 519, 312, 529, 303, 530, 160, 519, 152)
