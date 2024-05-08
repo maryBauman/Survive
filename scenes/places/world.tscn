@@ -329,8 +329,7 @@ position = Vector2(164, 268)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-scale = Vector2(0.992447, 1)
-polygon = PackedVector2Array(-177.339, 459, -172.301, -82, -119.906, -86, -115.875, -160, 479.623, -161, 509.851, -65, 579.376, 78, 528.995, 478, 483.653, 509, 483.653, 701, 477.607, 839, -211.598, 846, -214.621, 802, 205.553, 795, 207.568, 468)
+polygon = PackedVector2Array(-175, -83, -118, -82, -112, -159, 482, -163, 557, -163, 561, 418, 476, 530, 475, 850, -207, 844, -211, 798, 201, 796, 203, 464, -176, 461, -176, -67, -209, -47, -295, 899, 72, 936, 878, 902, 754, -307, -306, -317, -177, -73)
 
 [node name="smallLakeCollisions" type="StaticBody2D" parent="."]
 
