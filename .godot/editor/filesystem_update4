@@ -1,0 +1,6 @@
+res://scenes/places/world.tscn
+res://inventory/inventory.gd
+res://inventory/inv_ui.gd
+res://inventory/player_inv.tres
+res://inventory/inv_ui_slot.gd
+res://script/player.gd
