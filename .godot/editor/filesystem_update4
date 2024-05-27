@@ -4,3 +4,8 @@ res://inventory/inv_ui.gd
 res://inventory/player_inv.tres
 res://inventory/inv_ui_slot.gd
 res://script/player.gd
+res://scenes/MainMenu.tscn
+res://inventory/inv_ui_slot.tscn
+res://scenes/inv_ui.tscn
+res://scenes/people/player.tscn
+res://scenes/stick_collectable.tscn
