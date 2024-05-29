@@ -13,6 +13,8 @@ func _physics_process(delta):
 		player_state = "idle"
 	elif direction.x != 0 or direction.y !=0:
 		player_state = "walking"
+
+
 	
 	velocity = direction * speed
 	move_and_slide()
@@ -22,21 +24,25 @@ func play_anim(dir):
 	if player_state == "idle":
 		$AnimatedSprite2D.play("idle")
 	if player_state == "walking":
+		print("dir.y")
+		print(dir.y)
+		print("dir.x")
+		print(dir.x)
 		if dir.y == -1:
 			$AnimatedSprite2D.play("n-walk")
-		if dir.x == 1:
+		elif dir.x == 1:
 			$AnimatedSprite2D.play("e-walk")
-		if dir.y == 1:
+		elif dir.y == 1:
 			$AnimatedSprite2D.play("s-walk")
-		if dir.x == -1:
+		elif dir.x == -1:
 			$AnimatedSprite2D.play("w-walk")
-		if dir.x > 0.5 and dir.y < 0.5:
+		elif dir.x > 0.5 and dir.y < 0.5:
 			$AnimatedSprite2D.play("ne-walk")
-		if dir.x > 0.5 and dir.y > 0.5:
+		elif dir.x > 0.5 and dir.y > 0.5:
 			$AnimatedSprite2D.play("se-walk")
-		if dir.x < 0.5 and dir.y < 0.5:
+		elif dir.x < 0.5 and dir.y < 0.5:
 			$AnimatedSprite2D.play("nw-walk")
-		if dir.x < 0.5 and dir.y > 0.5:
+		elif dir.x < 0.5 and dir.y > 0.5:
 			$AnimatedSprite2D.play("sw-walk")
 
 func player():

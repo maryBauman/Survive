@@ -557,7 +557,8 @@ inventory = ExtResource("2_kw20s")
 position = Vector2(24.5, 20.5)
 scale = Vector2(1.78125, 1.59375)
 sprite_frames = SubResource("SpriteFrames_flie8")
-animation = &"idle"
+animation = &"n-walk"
+frame_progress = 0.69863
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(25, 24)
