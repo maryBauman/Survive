@@ -24,10 +24,6 @@ func play_anim(dir):
 	if player_state == "idle":
 		$AnimatedSprite2D.play("idle")
 	if player_state == "walking":
-		print("dir.y")
-		print(dir.y)
-		print("dir.x")
-		print(dir.x)
 		if dir.y == -1:
 			$AnimatedSprite2D.play("n-walk")
 		elif dir.x == 1:
