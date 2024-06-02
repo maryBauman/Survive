@@ -4,6 +4,7 @@ res://inventory/inv_ui.gd
 res://inventory/player_inv.tres
 res://inventory/inv_ui_slot.gd
 res://script/player.gd
+res://scenes/plants/apple_tree.tscn
 res://scenes/MainMenu.tscn
 res://inventory/inv_ui_slot.tscn
 res://scenes/inv_ui.tscn

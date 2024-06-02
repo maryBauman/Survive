@@ -903,6 +903,7 @@ sources/2 = SubResource("TileSetAtlasSource_7vp06")
 sources/3 = SubResource("TileSetAtlasSource_unoip")
 
 [node name="world" type="Node2D"]
+y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("1_v13kv")]
 position = Vector2(-2, -1)

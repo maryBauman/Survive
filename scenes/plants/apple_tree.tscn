@@ -52,6 +52,11 @@ wait_time = 2.475
 
 [node name="Marker2D" type="Marker2D" parent="."]
 
+[node name="collision" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collision"]
+polygon = PackedVector2Array(-12, -11, -12, 5, -7, 8, -7, 12, -5, 15, 5, 15, 8, 13, 8, 8, 10, 8, 10, 5, 13, 5, 13, -11, 10, -15, 8, -17, -7, -17)
+
 [connection signal="body_entered" from="pickable_area" to="." method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="pickable_area" to="." method="_on_pickable_area_body_exited"]
 [connection signal="timeout" from="growth_timer" to="." method="_on_growth_timer_timeout"]
