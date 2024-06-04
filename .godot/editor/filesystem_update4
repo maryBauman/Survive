@@ -5,3 +5,10 @@ res://inventory/inv_ui_slot.gd
 res://script/player.gd
 res://scenes/npc.tscn
 res://scenes/npc.gd
+res://scenes/people/player.tscn
+res://scenes/MainMenu.tscn
+res://scenes/places/world.tscn
+res://inventory/inv_ui_slot.tscn
+res://scenes/inv_ui.tscn
+res://scenes/stick_collectable.tscn
+res://scenes/plants/apple_tree.tscn
