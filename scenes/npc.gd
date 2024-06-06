@@ -40,4 +40,11 @@ func _process(delta):
 #			$AnimatedSprite2D.play("nw-walk")
 #		elif dir.x < 0.5 and dir.y > 0.5:
 #			$AnimatedSprite2D.play("sw-walk")
-		
+	if is_roaming:
+		match cur_state:
+			IDLE:
+				pass
+			NEW_DIR:
+				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
+			MOVE:
+				move(delta)
