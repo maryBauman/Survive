@@ -183,3 +183,6 @@ shape = SubResource("CircleShape2D_5swav")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[connection signal="body_shape_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_body_shape_exited"]
