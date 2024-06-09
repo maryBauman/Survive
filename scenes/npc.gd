@@ -11,6 +11,7 @@ var dir = Vector2.RIGHT
 var start_pos
 
 enum {
+	# 1=IDLE, 2=NEW_DIR, 3=MOVE
 	IDLE,
 	NEW_DIR,
 	MOVE
@@ -22,6 +23,7 @@ func _ready():
 	
 func _process(delta):
 	if cur_state==0 or cur_state==1:
+		#cur_state = IDLE or NEW_DIR
 		$AnimatedSprite2D.play("idle")
 	elif cur_state==2 and !is_chatting:
 		if dir.y == -1:
@@ -32,15 +34,9 @@ func _process(delta):
 			$AnimatedSprite2D.play("s-walk")
 		elif dir.x == -1:
 			$AnimatedSprite2D.play("w-walk")
-#		elif dir.x > 0.5 and dir.y < 0.5:
-#			$AnimatedSprite2D.play("ne-walk")
-#		elif dir.x > 0.5 and dir.y > 0.5:
-#			$AnimatedSprite2D.play("se-walk")
-#		elif dir.x < 0.5 and dir.y < 0.5:
-#			$AnimatedSprite2D.play("nw-walk")
-#		elif dir.x < 0.5 and dir.y > 0.5:
-#			$AnimatedSprite2D.play("sw-walk")
+
 	if is_roaming:
+		chooseNewState()
 		match cur_state:
 			IDLE:
 				pass
@@ -48,6 +44,7 @@ func _process(delta):
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE:
 				move(delta)
+				
 func choose(array):
 	array.shuffle()
 	return array.front()
@@ -56,7 +53,6 @@ func move(delta):
 	if !is_chatting:
 		position += dir * speed * delta
 		
-
 
 func _on_chat_detection_area_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.has_method("player"):
@@ -68,6 +64,10 @@ func _on_chat_detection_area_body_shape_exited(body_rid, body, body_shape_index,
 	if body.has_method("player"):
 		player_in_chatzone = false
 
-func on_timer_timeout():
-	$Timer.wait_time=choose([0.5,1,1.5 ])
+#never called, gonna try calling it
+func chooseNewState():
+	#$Timer.wait_time=choose([5, 10, 15, 20, 30, 45])
+	$Timer.wait_time = (3000)
+	print($Timer.time_left())
 	cur_state = choose([IDLE, NEW_DIR, MOVE])
+	print("cur_state = ", cur_state)

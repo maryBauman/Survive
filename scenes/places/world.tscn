@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cy5a7c2wpcxkn"]
+[gd_scene load_steps=15 format=3 uid="uid://cy5a7c2wpcxkn"]
 
 [ext_resource type="PackedScene" uid="uid://caoddlud4u0ul" path="res://scenes/people/player.tscn" id="1_v13kv"]
 [ext_resource type="Texture2D" uid="uid://nbbmuomuymlb" path="res://art/environment/survivalgame-terrian-defult.png" id="2_2f5su"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://51c3jrrwueam" path="res://scenes/plants/apple_tree.tscn" id="6_3c77k"]
 [ext_resource type="AudioStream" uid="uid://c5yc7fuvp324d" path="res://music/sax.wav" id="7_nv6n8"]
 [ext_resource type="PackedScene" uid="uid://xqowrgikkpcj" path="res://scenes/stick_collectable.tscn" id="8_p5kkq"]
+[ext_resource type="PackedScene" uid="uid://dqlvdufprgkx3" path="res://scenes/npc.tscn" id="9_3pcsi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0thck"]
 texture = ExtResource("2_2f5su")
@@ -982,3 +983,6 @@ polygon = PackedVector2Array(-175, -83, -118, -82, -112, -159, 482, -163, 557, -
 
 [node name="smallLakeCollisionShape" type="CollisionPolygon2D" parent="smallLakeCollisions"]
 polygon = PackedVector2Array(507, 163, 507, 304, 519, 312, 529, 303, 530, 160, 519, 152)
+
+[node name="npc" parent="." instance=ExtResource("9_3pcsi")]
+position = Vector2(305, 112)
