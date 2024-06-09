@@ -20,6 +20,8 @@ enum {
 func _ready():
 	randomize()
 	start_pos = position
+	$Timer.one_shot = false
+	
 	
 func _process(delta):
 	if cur_state==0 or cur_state==1:
@@ -36,7 +38,6 @@ func _process(delta):
 			$AnimatedSprite2D.play("w-walk")
 
 	if is_roaming:
-		chooseNewState()
 		match cur_state:
 			IDLE:
 				pass
@@ -44,6 +45,8 @@ func _process(delta):
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE:
 				move(delta)
+		await $Timer.timeout
+
 				
 func choose(array):
 	array.shuffle()
@@ -52,6 +55,7 @@ func choose(array):
 func move(delta):
 	if !is_chatting:
 		position += dir * speed * delta
+
 		
 
 func _on_chat_detection_area_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
@@ -64,10 +68,13 @@ func _on_chat_detection_area_body_shape_exited(body_rid, body, body_shape_index,
 	if body.has_method("player"):
 		player_in_chatzone = false
 
-#never called, gonna try calling it
-func chooseNewState():
+
+func _on_timer_timeout():
 	#$Timer.wait_time=choose([5, 10, 15, 20, 30, 45])
-	$Timer.wait_time = (3000)
-	print($Timer.time_left())
+	$Timer.wait_time = (1)
 	cur_state = choose([IDLE, NEW_DIR, MOVE])
 	print("cur_state = ", cur_state)
+	
+
+	
+
