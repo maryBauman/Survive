@@ -11,3 +11,4 @@ res://scenes/people/player.tscn
 res://scenes/stick_collectable.tscn
 res://scenes/plants/apple_tree.tscn
 res://scenes/npc.gd
+res://dialogue_ui.tscn

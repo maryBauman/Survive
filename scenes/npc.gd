@@ -45,7 +45,7 @@ func _process(delta):
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE:
 				move(delta)
-		#shouldn't be needed but keeping as a comment just in case
+		#shouldn't be needed but keeping as a comment djust in case
 		#await $Timer.timeout
 		if Input.is_action_just_pressed("chat"):
 			print("chatting with npc")

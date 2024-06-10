@@ -1,3 +1,6 @@
+RichTextLabel
+NinePatchRect
+Control
 Timer
 CollisionShape2D
 Area2D
@@ -10,12 +13,10 @@ Sprite2D
 Label
 Button
 VBoxContainer
-Control
 Panel
 CenterContainer
 CanvasLayer
 GridContainer
-NinePatchRect
 ColorRect
 AudioStreamPlayer
 AnimationPlayer
