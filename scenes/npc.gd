@@ -45,7 +45,14 @@ func _process(delta):
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE:
 				move(delta)
-		await $Timer.timeout
+		#shouldn't be needed but keeping as a comment just in case
+		#await $Timer.timeout
+		if Input.is_action_just_pressed("chat"):
+			print("chatting with npc")
+			is_roaming = false
+			is_chatting = true
+			#will stop the npc, even if they are in the middle of walking
+			$AnimatedSprite2D.play("idle")
 
 				
 func choose(array):
@@ -73,7 +80,7 @@ func _on_timer_timeout():
 	#$Timer.wait_time=choose([5, 10, 15, 20, 30, 45])
 	$Timer.wait_time = (1)
 	cur_state = choose([IDLE, NEW_DIR, MOVE])
-	print("cur_state = ", cur_state)
+	print("npc cur_state = ", cur_state)
 	
 
 	
