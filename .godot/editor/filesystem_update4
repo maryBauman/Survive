@@ -5,3 +5,11 @@ res://inventory/player_inv.tres
 res://inventory/inv_ui_slot.gd
 res://script/player.gd
 res://dialogue/worker_dialogue.json
+res://scenes/places/world.tscn
+res://dialogue_ui.gd
+res://inventory/inv_ui_slot.tscn
+res://scenes/inv_ui.tscn
+res://scenes/people/player.tscn
+res://scenes/stick_collectable.tscn
+res://scenes/plants/apple_tree.tscn
+res://scenes/npc.tscn

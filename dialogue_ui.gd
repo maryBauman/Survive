@@ -1,11 +1,15 @@
 extends Control
 
+@export_file("*.json") var dialogueFile
 
-# Called when the node enters the scene tree for the first time.
+var dialogue = []
+var curDialogueId = 0
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	start()
+	
+func start():
+	dialogue = loadDialogue()
+	
+func loadDialogue():
+	
