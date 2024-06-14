@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqbtt0oh1ltyb"]
 
-[ext_resource type="Texture2D" uid="uid://yar0fesfb4xs" path="res://inventory/inventory_art/inventory-background.png" id="1_aw56s"]
-[ext_resource type="Script" path="res://dialogue_ui.gd" id="1_jydw4"]
+[ext_resource type="Script" path="res://dialogue/dialogue_ui.gd" id="1_4xyb3"]
+[ext_resource type="Texture2D" uid="uid://yar0fesfb4xs" path="res://inventory/inventory_art/inventory-background.png" id="2_sl7al"]
 
 [node name="DialogueUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_jydw4")
+script = ExtResource("1_4xyb3")
 
 [node name="dialogueBackground" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -16,7 +16,7 @@ offset_left = -82.0
 offset_top = -76.0
 offset_right = 82.0
 offset_bottom = -12.0
-texture = ExtResource("1_aw56s")
+texture = ExtResource("2_sl7al")
 patch_margin_left = 3
 patch_margin_top = 3
 patch_margin_right = 3
