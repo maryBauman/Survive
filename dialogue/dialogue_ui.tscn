@@ -16,7 +16,6 @@ offset_left = 30.0
 offset_top = 21.0
 offset_right = 194.0
 offset_bottom = 85.0
-scale = Vector2(3, 3)
 texture = ExtResource("2_sl7al")
 patch_margin_left = 3
 patch_margin_top = 3
