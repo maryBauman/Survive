@@ -10,19 +10,20 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_4xyb3")
 
-[node name="dialogueBackground" type="NinePatchRect" parent="."]
+[node name="DialogueBackground" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = -82.0
-offset_top = -76.0
-offset_right = 82.0
-offset_bottom = -12.0
+offset_left = 30.0
+offset_top = 21.0
+offset_right = 194.0
+offset_bottom = 85.0
+scale = Vector2(3, 3)
 texture = ExtResource("2_sl7al")
 patch_margin_left = 3
 patch_margin_top = 3
 patch_margin_right = 3
 patch_margin_bottom = 3
 
-[node name="Name" type="RichTextLabel" parent="dialogueBackground"]
+[node name="Name" type="RichTextLabel" parent="DialogueBackground"]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 2.0
@@ -31,11 +32,10 @@ offset_bottom = 42.0
 scale = Vector2(0.8, 0.8)
 text = "Name:"
 
-[node name="Text" type="RichTextLabel" parent="dialogueBackground"]
+[node name="Text" type="RichTextLabel" parent="DialogueBackground"]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 37.0
 offset_right = 263.0
 offset_bottom = 62.0
 scale = Vector2(0.6, 0.6)
-text = "I have things to say! Chatting!"

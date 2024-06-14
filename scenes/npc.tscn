@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/npc.gd" id="1_obn75"]
 [ext_resource type="Texture2D" uid="uid://b5qden35uox2a" path="res://art/character/Human-Worker-Red.png" id="1_pforg"]
-[ext_resource type="PackedScene" uid="uid://dqbtt0oh1ltyb" path="res://dialogue_ui.tscn" id="3_gp0qr"]
+[ext_resource type="PackedScene" uid="uid://dqbtt0oh1ltyb" path="res://dialogue/dialogue_ui.tscn" id="3_gp0qr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agqoi"]
 atlas = ExtResource("1_pforg")

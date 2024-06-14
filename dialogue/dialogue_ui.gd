@@ -18,5 +18,15 @@ func loadDialogue():
 	var content = JSON.parse_string(file.get_as_text())
 	return content
 	
+func _input(event):
+	if event.is_action_pressed("ui_accept"):
+		nextScript()
+	
 func nextScript():
 	curDialogueId += 1
+	if curDialogueId >= len(dialogue):
+		#end the dialogue here and give control back to npc
+		return
+
+	$DialogueBackground/Name.text = dialogue[curDialogueId]['name']
+	$DialogueBackground/Text.text = dialogue[curDialogueId]['text']
