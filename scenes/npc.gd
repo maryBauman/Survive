@@ -49,6 +49,7 @@ func _process(delta):
 		#await $Timer.timeout
 		if Input.is_action_just_pressed("chat"):
 			print("chatting with npc")
+			$DialogueUI.start()
 			is_roaming = false
 			is_chatting = true
 			#will stop the npc, even if they are in the middle of walking
@@ -83,5 +84,6 @@ func _on_timer_timeout():
 	print("npc cur_state = ", cur_state)
 	
 
-	
-
+func _on_dialogue_ui_dialogue_finished():
+	is_chatting = false
+	is_roaming = true

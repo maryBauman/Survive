@@ -190,3 +190,4 @@ autostart = true
 [connection signal="body_shape_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_body_shape_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="dialogueFinished" from="DialogueUI" to="." method="_on_dialogue_ui_dialogue_finished"]
