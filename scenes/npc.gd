@@ -78,8 +78,11 @@ func _on_chat_detection_area_body_shape_exited(body_rid, body, body_shape_index,
 
 
 func _on_timer_timeout():
-	#$Timer.wait_time=choose([5, 10, 15, 20, 30, 45])
-	$Timer.wait_time = (1)
+#	$Timer.wait_time=choose([5, 10, 15, 20, 30, 45])
+	var times = [5, 10, 15]
+	times.shuffle()
+	$Timer.wait_time = (times.front())
+	
 	cur_state = choose([IDLE, NEW_DIR, MOVE])
 	print("npc cur_state = ", cur_state)
 	
