@@ -1,0 +1,9 @@
+[
+	String name = "God"
+	String you = "You"
+	{"name": name, "text": "Welcome to my game!"},
+	{"name": name, "text": "I hope  your journey from the real world into
+	our little digital paradise was pleasant."},
+	{"name": you, "text": "I suppose it was a pretty nice menu screen."},
+	{"name": name, "text": "Good to hear! Ready to get started?"}
+]
