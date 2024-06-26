@@ -6,3 +6,6 @@ res://inventory/inv_ui_slot.gd
 res://script/player.gd
 res://scenes/npc.tscn
 res://dialogue/god_dialogue.json
+res://scenes/places/world.tscn
+res://dialogue/worker_dialogue.json
+res://dialogue/dialogue_ui.tscn

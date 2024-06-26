@@ -1,8 +1,8 @@
 [
-	{"name": "Worker", "text": "Hello!!!"},
-	{"name": "Worker", "text": "I have things to say!"},
-	{"name": "Worker", "text": "I'm choppin trees!!"},
-	{"name": "You", "text": "I like trees."},
-	{"name": "Worker", "text": "Good because I'm choppin trees!!"},
-	{"name": "Worker", "text": "Bye now!"}
+	{"name": "npc", "text": "Hello!!!"},
+	{"name": "npc", "text": "I have things to say!"},
+	{"name": "npc", "text": "I'm choppin trees!!"},
+	{"name": "you", "text": "I like trees."},
+	{"name": "npc", "text": "Good because I'm choppin trees!!"},
+	{"name": "npc", "text": "Bye now!"}
 ]
