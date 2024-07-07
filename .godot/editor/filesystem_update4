@@ -1,11 +1,6 @@
-res://dialogue/dialogue_ui.gd
+res://scenes/places/world.tscn
 res://inventory/inventory.gd
 res://inventory/inv_ui.gd
 res://inventory/player_inv.tres
 res://inventory/inv_ui_slot.gd
 res://script/player.gd
-res://scenes/npc.tscn
-res://dialogue/god_dialogue.json
-res://scenes/places/world.tscn
-res://dialogue/worker_dialogue.json
-res://dialogue/dialogue_ui.tscn
