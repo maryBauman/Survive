@@ -4,5 +4,10 @@ res://inventory/inv_ui.gd
 res://inventory/player_inv.tres
 res://inventory/inv_ui_slot.gd
 res://script/player.gd
-res://scenes/plants/big_tree.tscn
 res://scenes/plants/apple_tree.tscn
+res://scenes/plants/big_tree.tscn
+res://scenes/people/npc.tscn
+res://script/apple_collectable.gd
+res://script/apple_tree.gd
+res://scenes/npc.gd
+res://scenes/people/player.tscn

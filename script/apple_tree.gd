@@ -12,6 +12,7 @@ func _ready():
 		$growth_timer.wait_time = randi_range(10, 30)
 		$growth_timer.start()
 		
+
 func _process(delta):
 	if state == "no apples":
 		$AnimatedSprite2D.play("no_apples")

@@ -13,8 +13,6 @@ func _physics_process(delta):
 		player_state = "idle"
 	elif direction.x != 0 or direction.y !=0:
 		player_state = "walking"
-
-
 	
 	velocity = direction * speed
 	move_and_slide()
