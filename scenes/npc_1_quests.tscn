@@ -9,6 +9,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="questUI" type="NinePatchRect" parent="."]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 21.0
 offset_right = 194.0
@@ -37,8 +38,17 @@ offset_bottom = 71.0
 scale = Vector2(0.6, 0.6)
 text = "Could you go pick up 3 sticks for me?"
 
+[node name="yesButton1" type="Button" parent="questUI"]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 34.0
+offset_right = 121.0
+offset_bottom = 65.0
+text = "yes"
+
 [node name="noQuest" type="NinePatchRect" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 30.0
 offset_top = 21.0
 offset_right = 194.0
@@ -69,6 +79,7 @@ text = "I don't have any tasks for you right now. Check in later!"
 
 [node name="finishQuest" type="NinePatchRect" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 30.0
 offset_top = 21.0
 offset_right = 194.0
