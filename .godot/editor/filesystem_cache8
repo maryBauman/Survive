@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724941685
+::res://::1725045648
 inv_slot.gd::GDScript::-1::1718399341::0::1::::InvSlot<>Resource<>::
 README.md::TextFile::-1::1712011926::0::1::::<><>::
 ::res://art/::1724941681
@@ -80,8 +80,8 @@ Fuits assets.png::CompressedTexture2D::8289507918730827792::1721675123::17217473
 ::res://art/fruit/ninjikin/::1721747406
 credit.txt::TextFile::-1::1721675334::0::1::::<><>::
 Fruit.png::CompressedTexture2D::6916604894231104184::1721675135::1721747391::1::::<><>::
-::res://devPics/::1724941713
-2024-08-29.png::CompressedTexture2D::3129238740377312806::1724941713::1724941713::1::::<><>::
+::res://devPics/::1724941766
+2024-08-29.png::CompressedTexture2D::5081389872876401909::1724941667::1725045650::1::::<><>::
 ::res://dialogue/::1724941625
 dialogue_ui.gd::GDScript::-1::1719358046::0::1::::<>Control<>::
 dialogue_ui.tscn::PackedScene::8285536815052900181::1724941625::0::1::::<><>::res://dialogue/dialogue_ui.gd<>uid://yar0fesfb4xs::::res://inventory/inventory_art/inventory-background.png

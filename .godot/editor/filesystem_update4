@@ -10,4 +10,5 @@ res://scenes/people/npc.tscn
 res://scenes/people/player.tscn
 res://scenes/npc_1_quests.tscn
 res://dialogue/dialogue_ui.tscn
-res://scenes/npc_1_quests.gd
+res://scenes/plants/apple_collectable.tscn
+res://script/apple_collectable.gd
